@@ -1,0 +1,63 @@
+/* 
+  peNLS.strings
+  peSDK NLS variables
+
+  Created by Thieu Huynh on 2013-05-13.
+  Copyright (c) 2013 SCA interactive. All rights reserved.
+*/
+
+
+
+"missing_curl" = "The CURL PHP extension is required.";
+"missing_json" = "The JSON PHP extension is required.";
+"missing_certificate" = "Missing Certificate, please ensure the linkrd crt file is in the directory.";
+"invalid_data_returned" = "Invalid data from server, please check your configuation variables.";
+"invalid_data" = "Invalid data from server, please check your configuation variables.";
+"restricted_contest" = "Could not log in to contest, please check your configuration variables.";
+"missing_required_config" = "Missing a required configuration field, you must set contest_adminID, client, promo, and authkey.";
+"missing_required_request_fields" = "Missing required variables";
+"missing_required_user_fields" = "Missing required user variables";
+"contest_not_open" = "Contest is not open, please check the open & close dates";
+"sweeps_wrong_game_type" = "Game is not of the type sweeps";
+"instant_wrong_game_type" = "Game is not of the type instantwin";
+"too_many_plays_in_period" = "You've already played in this period";
+"canplay_failed" = "The action canplay did not perform as expected";
+"instantwin_failed" = "The action canplay did not perform as expected";
+"error_missing_parameters" = "Missing required fields";
+"key_does_not_match" = "MD5 hash does not validate";
+"invalid_login" = "username and email do not match";
+"unknown_action" = "action not valid";
+"username_too_small" = "minimum size is 3 chars";
+"username_too_big" = "max size is 25 chars";
+"username_bad_chars" = "Usernames must only contain alphanumeric characters, '@', '.', '_', or '-'.";
+"error_invalid_username" = "Usernames must only contain alphanumeric characters, '@', '.', '_', or '-'.";
+"email_bad_chars" = "Email address must only contain alphanumeric characters, '.', '_', or '-', '+', '=' or '!'.";
+"error_username_exists" = "username is already in the system";
+"email_already_registered_in_site" = "Email already registered in site";
+"error_get_scores" = "Server is incorrectly configured for the winning levels";
+"can_not_write_cfg" = "Can not write a configuration cache, please check the permission on includes/sitecfgs/";
+"rng_pin_empty" = "You have not entered a PIN, please enter a PIN and try again.";
+"rng_pin_invalid" = "You have entered an invalid Code. Please check your Code and try again.";
+"rng_pin_max_usage_reached" = "Sorry but the PIN you entered has already been used the maximum number of times allowable.";
+"error_contest_too_early" = "We're sorry, the submission period for this game hasn't yet begun.";
+"error_contest_too_late" = "We're sorry, the submission deadline for this game has passed.";
+"error_too_late_to_register" = "We're sorry, the registration deadline for this contest has now passed.";
+"pin_too_early" = "Sorry, this PIN is not valid yet.";
+"pin_too_late" = "Sorry, this PIN is no longer valid.";
+"age_verify_failed" = "You must be at least 21 years old to enter this contest.";
+"could_not_set_picks" = "Your picks could not be set";
+"could_not_set_result" = "Sorry, results for this game can not be set";
+"could_not_update_rng_conf_or_draw" = "Sorry, this draw could not be set";
+"incomplete_picks" = "Incomplete Picks";
+"not_enough_picks_received" = "Not enough picks received";
+"username_exists" = "Sorry, that username is already taken.";
+"username_not_allowed" = "The username you have selected cannot be used. Please choose another one.";
+"username_not_found" = "Couldn't find username.";
+"username_not_found_in_site" = "Sorry, the username does not exist within this site.";
+"draw_requires_pin" = "You have not entered a PIN, please enter a PIN and try again.";
+"draw_server_error" = "Draw Server Error: The drawserver returned {1}";
+"draw_server_unavailable" = "Sorry, could not connect to the draw server. Please try again later.";
+"game_has_expired" = "This game has expired";
+"play_has_been_suspended" = "Play has been suspended.";
+"no_mobile_email_defined" = "No cell phone on record.";
+"error_fields_incomplete" = "You did not complete all required fields.";
