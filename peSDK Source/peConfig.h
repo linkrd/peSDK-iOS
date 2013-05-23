@@ -38,6 +38,6 @@
 - (NSString*) getRequiredFieldNames;
 - (NSString*) getAllFieldNames;
 - (NSString*) getAuthUserField;
-- (BOOL) hasRequiredFields:(NSDictionary*) params;
+- (BOOL) hasRequiredFields:(NSDictionary*)parameters;
 - (NSDictionary*) getAll;
 @end

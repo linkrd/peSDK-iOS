@@ -34,11 +34,8 @@
 - (NSString *) buildAuth:(NSString*)key;
 - (NSDictionary *) buildParamsWithAction:(NSString*)_action userKey:(NSString*)_userKey userValue:(NSString*)_userValue extraParams:(NSDictionary*)_extraParams;
 - (void) fetchConfigWithSettings:(NSDictionary*)configSettings;
-//- (void) doWithParams:(NSDictionary*)params block:(void (^)(NSDictionary *responseJSON, NSError *error))block;
 - (void) doWithAction:(NSString*)action userKey:(NSString*)userKey userValue:(NSString*)userValue extraParams:(NSDictionary *)extraParams;
 + (void) sendSynchronousRequestWithParameters:(NSDictionary *) params success:(void (^)(id responseJSON)) successCallback failure:(void (^)(NSError * error, NSString * errorMsg)) errorCallback;
-
-
 
 @end
 

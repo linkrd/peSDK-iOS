@@ -215,18 +215,16 @@
 /**
  *  hasRequiredFields
  *
- *  @param _params NSDictionary fields to check
+ *  @param parameters NSDictionary fields to check
  *  @return BOOL has required fields
  */
-- (BOOL) hasRequiredFields:(NSDictionary*) _params {
+- (BOOL) hasRequiredFields:(NSDictionary*) parameters {
     NSDictionary *profileFields = [self getProfileFields];
     NSArray *keys = [[self getProfileFields] allKeys];
     for (id key in keys) {
         NSString *keyName = [[profileFields valueForKey:key] valueForKey:@"name"];
-       // NSLog(@"%@-%@", keyName, [profileFields valueForKey:key]);
         if ([[[profileFields valueForKey:key] valueForKey:@"is_required"] intValue] == 1 ) {
-            if ((![_params valueForKey:keyName] || [[_params valueForKey:keyName] isEqualToString:@""]) && ![keyName isEqualToString:@"auth"]) {
-                NSLog(@"NO:%@", keyName);
+            if ((![parameters valueForKey:keyName] || [[parameters valueForKey:keyName] isEqualToString:@""]) && ![keyName isEqualToString:@"auth"]) {
                 return NO;
             }
         }
