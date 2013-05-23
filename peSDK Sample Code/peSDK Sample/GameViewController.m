@@ -43,7 +43,16 @@
             }
         } else {
             if ([[peConfig sharedConfig] isInstantWin]) {
+                NSString *canEnterErrorString = [canEnterError localizedDescription];
+                NSString *nextPlay = [prizeSDK nextPlay:nil error:&error];
+                if (nextPlay) {
+                    bodyText.text = [[NSString alloc] initWithFormat:@"%@.\n\nNext play available at %@", canEnterErrorString
+                                     , nextPlay];
+                } else {
+                    bodyText.text = [[NSString alloc] initWithFormat:@"%@", [error localizedDescription]];
+                }
                 headerText.text = @"Click To Win!";
+                //bodyText.text = [[NSString alloc] initWithFormat:@"%@.", [canEnterError localizedDescription]];
             } else {
                 headerText.text = @"Already Entered!";
             }
