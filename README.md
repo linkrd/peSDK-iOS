@@ -350,3 +350,9 @@ For any of the following functions which require the user parameters, you may le
 * peError: manages error levels and exceptions.
 
 Multilingual games can be done using the localized peNLS.string file.
+
+## Contact
+
+Feel free to contact me if you have any questions.
+
+[Thieu Huynh](http://github.com/ThieuHuynh)
