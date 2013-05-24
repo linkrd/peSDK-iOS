@@ -120,7 +120,12 @@
  *  @return NSDictionary profile fields
  */
 - (NSDictionary*) getProfileFields {
-    return [configuration valueForKey:peProfileFieldsKey];
+    NSArray *fields = [[NSArray alloc] initWithArray:[configuration valueForKey:peProfileFieldsKey]];
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
+    for (id obj in fields) {
+        [dict setObject:obj forKey:[obj valueForKey:@"name"]];
+    }
+    return dict;
 }
 
 /**

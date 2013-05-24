@@ -65,19 +65,15 @@
     }
 }
 
-- (void)configCompletedWithErrors:(NSArray *)errors response:(NSDictionary*)responseJSON  {
-    
-    NSString *errorString = [[NSString alloc] initWithString:NSLocalizedStringFromTable([errors lastObject], peNLSFile, @"peSDk error")];
-    [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"peSDK Configuration Error", nil) message:errorString delegate:nil cancelButtonTitle:nil otherButtonTitles:NSLocalizedString(@"OK", nil), nil] show];
-    
-}
 
 - (void)actionCompletedWithErrors:(NSArray *)errors response:(NSDictionary*)responseJSON  {
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
     NSString *action = [[NSString alloc] initWithString:[[responseJSON objectForKey:@"result"] valueForKey:@"action"]];
     NSLog(@"action:%@ errors:%@ response:%@", action, errors, responseJSON);
     NSString *errorString = [[NSString alloc] initWithString:NSLocalizedStringFromTable([errors lastObject], peNLSFile, @"peSDk error")];
-    if ([action isEqualToString:@"gamehistory"]) {
-        [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Sorry", nil) message:errorString delegate:nil cancelButtonTitle:nil otherButtonTitles:NSLocalizedString(@"OK", nil), nil] show];
+    if ([action isEqualToString:@"getconfig"]) {
+        [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"peSDK Configuration Error", nil) message:errorString delegate:nil cancelButtonTitle:nil otherButtonTitles:NSLocalizedString(@"OK", nil), nil] show];
+        [NSException raise:@"peSDK Config Exception" format:@"%@", errorString];
     } else {
         NSLog(@"action with errror '%@' not handled by actionCompleted delegate", action);
         [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"peSDK Configuration Error", nil) message:errorString delegate:nil cancelButtonTitle:nil otherButtonTitles:NSLocalizedString(@"OK", nil), nil] show];
