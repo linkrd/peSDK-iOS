@@ -9,7 +9,6 @@
 #import "FirstViewController.h"
 #import "GameViewController.h"
 #import "AppDelegate.h"
-#import "UIDevice+IdentifierAddition.h"
 #import "MBProgressHUD.h"
 #import "peError.h"
 
@@ -24,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *udid = [[UIDevice currentDevice] uniqueDeviceIdentifier];
+    NSString *udid = @"any-unique-string";
     
     NSDictionary *settings = [[NSDictionary alloc] initWithObjectsAndKeys:
                               udid, peContestAdminIDKey,

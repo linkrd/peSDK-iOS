@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		903807051745A50400F7F1F2 /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 903807021745A50400F7F1F2 /* NSString+MD5Addition.m */; };
-		903807061745A50400F7F1F2 /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 903807041745A50400F7F1F2 /* UIDevice+IdentifierAddition.m */; };
 		905619051741533700F94724 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905619041741533700F94724 /* UIKit.framework */; };
 		905619071741533700F94724 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905619061741533700F94724 /* Foundation.framework */; };
 		905619091741533700F94724 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905619081741533700F94724 /* CoreGraphics.framework */; };
@@ -52,10 +50,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		903807011745A50400F7F1F2 /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Addition.h"; sourceTree = "<group>"; };
-		903807021745A50400F7F1F2 /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Addition.m"; sourceTree = "<group>"; };
-		903807031745A50400F7F1F2 /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
-		903807041745A50400F7F1F2 /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
 		903807071745D7EB00F7F1F2 /* peSDKDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = peSDKDelegate.h; sourceTree = "<group>"; };
 		905619011741533700F94724 /* peSDK Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "peSDK Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		905619041741533700F94724 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -240,7 +234,6 @@
 			isa = PBXGroup;
 			children = (
 				90A07A6217458C4300C32679 /* AFNetworking */,
-				90A07A7617458C4300C32679 /* gekitz */,
 			);
 			name = ThirdParty;
 			path = ../../ThirdParty;
@@ -270,17 +263,6 @@
 				90A07A7517458C4300C32679 /* UIImageView+AFNetworking.m */,
 			);
 			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		90A07A7617458C4300C32679 /* gekitz */ = {
-			isa = PBXGroup;
-			children = (
-				903807011745A50400F7F1F2 /* NSString+MD5Addition.h */,
-				903807021745A50400F7F1F2 /* NSString+MD5Addition.m */,
-				903807031745A50400F7F1F2 /* UIDevice+IdentifierAddition.h */,
-				903807041745A50400F7F1F2 /* UIDevice+IdentifierAddition.m */,
-			);
-			path = gekitz;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,8 +359,6 @@
 				90A07A8117458C4300C32679 /* AFURLConnectionOperation.m in Sources */,
 				90A07A8217458C4300C32679 /* AFXMLRequestOperation.m in Sources */,
 				90A07A8317458C4300C32679 /* UIImageView+AFNetworking.m in Sources */,
-				903807051745A50400F7F1F2 /* NSString+MD5Addition.m in Sources */,
-				903807061745A50400F7F1F2 /* UIDevice+IdentifierAddition.m in Sources */,
 				90C046F3174D689A00E8DDC3 /* MBProgressHUD.m in Sources */,
 				905CA85E174DB93D00B48EBC /* GameViewController.m in Sources */,
 			);

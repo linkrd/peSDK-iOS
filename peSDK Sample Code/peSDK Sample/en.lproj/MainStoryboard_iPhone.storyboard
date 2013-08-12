@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -65,7 +65,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="egU-mb-xjy" firstAttribute="centerX" secondItem="NkP-46-5NE" secondAttribute="centerX" type="default" id="CBg-Yk-DSC"/>
-                            <constraint firstItem="NkP-46-5NE" firstAttribute="top" secondItem="X6b-qM-8UT" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="OVk-3C-EIo"/>
+                            <constraint firstItem="X6b-qM-8UT" firstAttribute="top" secondItem="16" secondAttribute="top" constant="84" id="NwO-VA-798"/>
                             <constraint firstItem="X6b-qM-8UT" firstAttribute="centerX" secondItem="16" secondAttribute="centerX" type="default" id="Qrq-QB-rez"/>
                             <constraint firstItem="tC7-MQ-9QU" firstAttribute="centerX" secondItem="fRx-Ja-9jy" secondAttribute="centerX" type="default" id="bQq-0L-RD7"/>
                             <constraint firstAttribute="bottom" secondItem="fRx-Ja-9jy" secondAttribute="bottom" constant="218" id="cNU-OW-NQ0"/>
@@ -73,8 +73,8 @@
                             <constraint firstItem="egU-mb-xjy" firstAttribute="top" secondItem="16" secondAttribute="top" constant="205" id="l32-QC-kzT"/>
                             <constraint firstItem="tC7-MQ-9QU" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="mxr-ac-wFr"/>
                             <constraint firstItem="NkP-46-5NE" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ngD-hJ-KzS"/>
-                            <constraint firstItem="X6b-qM-8UT" firstAttribute="top" secondItem="16" secondAttribute="top" constant="133" id="r7Y-KV-jcC"/>
                             <constraint firstItem="tC7-MQ-9QU" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="wyV-S6-tK3"/>
+                            <constraint firstItem="NkP-46-5NE" firstAttribute="top" secondItem="16" secondAttribute="top" constant="198" id="zDL-eF-H59"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="first" id="7"/>
@@ -277,7 +277,6 @@
         <class className="HistoryTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HistoryTableViewController.h"/>
             <relationships>
-                <relationship kind="action" name="refresh:"/>
                 <relationship kind="outlet" name="historyTable" candidateClass="UITableView"/>
             </relationships>
         </class>
