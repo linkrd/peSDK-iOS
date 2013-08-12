@@ -23,10 +23,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *udid = @"any-unique-string";
+    NSString *contestAdminID = @"any-unique-string";
     
     NSDictionary *settings = [[NSDictionary alloc] initWithObjectsAndKeys:
-                              udid, peContestAdminIDKey,
+                              contestAdminID, peContestAdminIDKey,
                               @"demosdk", peClientKey,
                               @"instant", pePromoKey,
                               @"DEMO-SDK1-1234-5678", peConfigAuthKey, nil];
