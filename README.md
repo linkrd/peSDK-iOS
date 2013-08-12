@@ -23,27 +23,27 @@ Demo Configurations
 
 ### Sweeps:
 ```objectivec
-    NSString *udid = @"any-unique-string";
+    NSString *contestAdminID = @"any-unique-string";
     NSDictionary *settings = [[NSDictionary alloc] initWithObjectsAndKeys:
-                              udid, peContestAdminIDKey,
+                              contestAdminID, peContestAdminIDKey,
                               @"demosdk", peClientKey,
                               @"sweeps", pePromoKey,
                               @"DEMO-SDK1-1234-5678", peConfigAuthKey, nil];
 ```                                            
 ### Instant Win (one level):
 ```objectivec
-    NSString *udid = @"any-unique-string";
+    NSString *contestAdminID = @"any-unique-string";
     NSDictionary *settings = [[NSDictionary alloc] initWithObjectsAndKeys:
-                              udid, peContestAdminIDKey,
+                              contestAdminID, peContestAdminIDKey,
                               @"demosdk", peClientKey,
                               @"instant", pePromoKey,
                               @"DEMO-SDK1-1234-5678", peConfigAuthKey, nil];
 ```                        
 ### Instant Win (multi level):
 ```objectivec
-    NSString *udid = @"any-unique-string";
+    NSString *contestAdminID = @"any-unique-string";
     NSDictionary *settings = [[NSDictionary alloc] initWithObjectsAndKeys:
-                              udid, peContestAdminIDKey,
+                              contestAdminID, peContestAdminIDKey,
                               @"demosdk", peClientKey,
                               @"instantmulti", pePromoKey,
                               @"DEMO-SDK1-1234-5678", peConfigAuthKey, nil];
@@ -106,9 +106,9 @@ PrizeSDK Functions
 
 Creates a new SDK object. 
 ```objectivec
-    NSString *udid = @"any-unique-string";
+    NSString *contestAdminID = @"any-unique-string";
     NSDictionary *settings = [[NSDictionary alloc] initWithObjectsAndKeys:
-                              udid, peContestAdminIDKey,
+                              contestAdminID, peContestAdminIDKey,
                               @"demosdk", peClientKey,
                               @"sweeps", pePromoKey,
                               @"DEMO-SDK1-1234-5678", peConfigAuthKey, nil];
