@@ -23,7 +23,7 @@ Demo Configurations
 
 ### Sweeps:
 ```objectivec
-    NSString *udid = [[UIDevice currentDevice] uniqueDeviceIdentifier];
+    NSString *udid = @"any-unique-string";
     NSDictionary *settings = [[NSDictionary alloc] initWithObjectsAndKeys:
                               udid, peContestAdminIDKey,
                               @"demosdk", peClientKey,
@@ -32,7 +32,7 @@ Demo Configurations
 ```                                            
 ### Instant Win (one level):
 ```objectivec
-    NSString *udid = [[UIDevice currentDevice] uniqueDeviceIdentifier];
+    NSString *udid = @"any-unique-string";
     NSDictionary *settings = [[NSDictionary alloc] initWithObjectsAndKeys:
                               udid, peContestAdminIDKey,
                               @"demosdk", peClientKey,
@@ -41,7 +41,7 @@ Demo Configurations
 ```                        
 ### Instant Win (multi level):
 ```objectivec
-    NSString *udid = [[UIDevice currentDevice] uniqueDeviceIdentifier];
+    NSString *udid = @"any-unique-string";
     NSDictionary *settings = [[NSDictionary alloc] initWithObjectsAndKeys:
                               udid, peContestAdminIDKey,
                               @"demosdk", peClientKey,
@@ -106,7 +106,7 @@ PrizeSDK Functions
 
 Creates a new SDK object. 
 ```objectivec
-    NSString *udid = [[UIDevice currentDevice] uniqueDeviceIdentifier];
+    NSString *udid = @"any-unique-string";
     NSDictionary *settings = [[NSDictionary alloc] initWithObjectsAndKeys:
                               udid, peContestAdminIDKey,
                               @"demosdk", peClientKey,
