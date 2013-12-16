@@ -344,12 +344,19 @@ For any of the following functions which require the user parameters, you may le
 
 ### Other Classes
 
-* peHTTPClient: wrapper for request model. Formats data for the request to the server.
+* peHTTPClient: wrapper for request model. Formats data for the request to the server. AFNetwoking settings: setDefaultSSLPinningMode.
 * peConfig: fetches, caches and evaluates configuration variables for a promotion.
 * peConstants: peSDK iOS constant variables.
 * peError: manages error levels and exceptions.
 
 Multilingual games can be done using the localized peNLS.string file.
+
+Common Errors 
+-------------
+ `This operation couldn't be completed. (NSURLErrorDomain error -1012.)`
+ 
+ Make sure contest.linkrd.com.cer file is in the Support Files directory and is still valid. See peSDK iOS Sample project. Check `setDefaultSSLPinningMode` in peHTTPClient.m
+
 
 ## Contact
 
