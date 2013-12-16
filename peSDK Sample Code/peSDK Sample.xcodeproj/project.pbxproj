@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9033EE11185F93AB0015F7E6 /* contest.linkrd.com.cer in Resources */ = {isa = PBXBuildFile; fileRef = 9033EE10185F93AB0015F7E6 /* contest.linkrd.com.cer */; };
 		905619051741533700F94724 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905619041741533700F94724 /* UIKit.framework */; };
 		905619071741533700F94724 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905619061741533700F94724 /* Foundation.framework */; };
 		905619091741533700F94724 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905619081741533700F94724 /* CoreGraphics.framework */; };
@@ -26,7 +27,6 @@
 		905619841741568100F94724 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905619831741568100F94724 /* Security.framework */; };
 		905619861741568B00F94724 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905619851741568B00F94724 /* SystemConfiguration.framework */; };
 		905619881741569500F94724 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905619871741569500F94724 /* MobileCoreServices.framework */; };
-		9056198A17415F5600F94724 /* contest.linkrd.com.cer in Resources */ = {isa = PBXBuildFile; fileRef = 9056198917415F5600F94724 /* contest.linkrd.com.cer */; };
 		905619DE17417CAD00F94724 /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905619DD17417CAD00F94724 /* HistoryTableViewController.m */; };
 		905619E217417E9900F94724 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905619E017417E9900F94724 /* DetailViewController.m */; };
 		905CA85E174DB93D00B48EBC /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905CA85D174DB93D00B48EBC /* GameViewController.m */; };
@@ -50,6 +50,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9033EE10185F93AB0015F7E6 /* contest.linkrd.com.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = contest.linkrd.com.cer; sourceTree = "<group>"; };
 		903807071745D7EB00F7F1F2 /* peSDKDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = peSDKDelegate.h; sourceTree = "<group>"; };
 		905619011741533700F94724 /* peSDK Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "peSDK Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		905619041741533700F94724 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -76,7 +77,6 @@
 		905619831741568100F94724 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		905619851741568B00F94724 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		905619871741569500F94724 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		9056198917415F5600F94724 /* contest.linkrd.com.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = contest.linkrd.com.cer; sourceTree = "<group>"; };
 		905619DC17417CAD00F94724 /* HistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewController.h; sourceTree = "<group>"; };
 		905619DD17417CAD00F94724 /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewController.m; sourceTree = "<group>"; };
 		905619DF17417E9900F94724 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
@@ -194,11 +194,11 @@
 		9056190B1741533700F94724 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9033EE10185F93AB0015F7E6 /* contest.linkrd.com.cer */,
 				905619251741533700F94724 /* first.png */,
 				905619271741533700F94724 /* first@2x.png */,
 				9056192C1741533700F94724 /* second.png */,
 				9056192E1741533700F94724 /* second@2x.png */,
-				9056198917415F5600F94724 /* contest.linkrd.com.cer */,
 				9056190C1741533700F94724 /* peSDK Sample-Info.plist */,
 				9056190D1741533700F94724 /* InfoPlist.strings */,
 				905619101741533700F94724 /* main.m */,
@@ -317,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9033EE11185F93AB0015F7E6 /* contest.linkrd.com.cer in Resources */,
 				9056190F1741533700F94724 /* InfoPlist.strings in Resources */,
 				905619171741533700F94724 /* Default.png in Resources */,
 				905619191741533700F94724 /* Default@2x.png in Resources */,
@@ -327,7 +328,6 @@
 				905619281741533700F94724 /* first@2x.png in Resources */,
 				9056192D1741533700F94724 /* second.png in Resources */,
 				9056192F1741533700F94724 /* second@2x.png in Resources */,
-				9056198A17415F5600F94724 /* contest.linkrd.com.cer in Resources */,
 				90E9441317469E8F00021937 /* peNLS.strings in Resources */,
 				905CA860174DBF6800B48EBC /* DetailViewController.xib in Resources */,
 			);

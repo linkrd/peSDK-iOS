@@ -18,7 +18,7 @@
 
 @implementation FirstViewController
 
-@synthesize prizeSDK, usernameField;
+@synthesize prizeSDK, usernameField, login;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -116,7 +116,8 @@
         NSLog(@"authenticateOnServer:%@", error);
         [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Authentication Error", nil) message:[error localizedDescription] delegate:nil cancelButtonTitle:nil otherButtonTitles:NSLocalizedString(@"OK", nil), nil] show];
     } else {
-        
+        NSDictionary *userProfile = [prizeSDK getUserProfile];
+        login.text = [[NSString alloc] initWithFormat:@"username: %@", [[userProfile objectForKey:@"username"] objectForKey:@"value"]   ];
     }
     
 }

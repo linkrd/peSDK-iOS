@@ -41,7 +41,10 @@
     [AFJSONRequestOperation addAcceptableContentTypes:[NSSet setWithObject:@"text/plain"]];
       
     if ([[url scheme] isEqualToString:@"https"] && [[url host] isEqualToString:@"contest.linkrd.com"]) {
-        [self setDefaultSSLPinningMode:AFSSLPinningModePublicKey];
+        // set to AFSSLPinningModePublicKey if certificate is not required
+        //[self setDefaultSSLPinningMode:AFSSLPinningModePublicKey];
+        // AFSSLPinningModeCertificate - a certificate is required, check sample code for contest.linkrd.com.cer file
+        [self setDefaultSSLPinningMode:AFSSLPinningModeCertificate];
     }
     
     return self;

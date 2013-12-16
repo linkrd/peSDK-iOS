@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *bodyText;
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
+@property (strong, nonatomic) IBOutlet UILabel *login;
 
 @property (nonatomic, strong) peSDK *prizeSDK;
 
